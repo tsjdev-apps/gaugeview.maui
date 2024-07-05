@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:GaugeView.Controls"
+             x:Class="GaugeView.MainPage">
+
+    <VerticalStackLayout Padding="30,0"
+                         Spacing="25">
+        <Button Text="Decrement"
+                Clicked="OnDecrementClicked" />
+
+        <Button Text="Increment"
+                Clicked="OnIncrementClicked" />
+
+        <controls:GaugeView x:Name="GaugeView"
+                            Unit="My Unit"
+                            NeedleColor="Black"
+                            TextColor="Black" />
+    </VerticalStackLayout>
+
+</ContentPage>
